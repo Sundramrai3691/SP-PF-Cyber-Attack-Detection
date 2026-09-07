@@ -112,3 +112,25 @@ PyPower, PyTorch, CVXPY, MOSEK nor external data.
 - Validate false-alarm and detection rates over many scenarios before making
   performance claims.
 - Add a faculty-data adapter only after inspection confirms signal semantics.
+
+## Multi-Scenario FDIA Evaluation
+
+The default 30% FDIA demo is a smoke test, not a sensitivity study. Run the
+deterministic single-seed sweep with:
+
+```powershell
+python -m experiments.run_fdia_sweep
+```
+
+It evaluates one no-attack control and 5%, 10%, 15%, 20%, and 30% FDIA cases
+over four valid current-model channel configurations: `[6, 7]`, `[6]`, `[7]`,
+and `[3, 4]`. Channels 3--5 are speed-deviation measurements; channels 6--8
+are electrical-power measurements. The threshold is calibrated once from the
+attack-free control only, so attacked samples never enter calibration.
+
+Results are written to `results/fdia_sweep_results.csv`,
+`results/fdia_sweep_results.json`, and `results/sweep/`. Per scenario the
+report stores detection status/delay, threshold, maximum score, state RMSE,
+and pre-attack false-alarm count/rate. These results evaluate this simplified
+fixed-partition synthetic SP-PF prototype only; they do not establish the
+paper's exact SP-PF method or superiority over another detector.

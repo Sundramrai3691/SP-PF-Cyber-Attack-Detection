@@ -111,6 +111,9 @@ def run_experiment(config: DemoConfig = DemoConfig(), output_dir: str | Path | N
         "threshold": threshold,
         "flags": flags,
         "effective_sizes": effective_sizes,
+        # Each ParticleFilter normalizes after every update; exposing final
+        # sums lets batch experiments assert the invariant explicitly.
+        "partition_weight_sums": np.asarray([float(filter_.weights.sum()) for filter_ in sppf.filters]),
         "baseline_scores": baseline_scores,
         "baseline_threshold": baseline_threshold,
         "baseline_flags": baseline_flags,
