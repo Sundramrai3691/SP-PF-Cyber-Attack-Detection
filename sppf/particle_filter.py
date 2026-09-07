@@ -80,6 +80,21 @@ class ParticleFilter:
             raise FloatingPointError("particle estimate is non-finite")
         return estimate
 
+    def set_particles(self, particles: np.ndarray, weights: np.ndarray | None = None) -> None:
+        """Install validated particles, used when an adaptive partition changes."""
+        particles = np.asarray(particles, dtype=float)
+        if particles.shape != (self.particle_count, self.state_dimension):
+            raise ValueError("reconfigured particles have incorrect shape")
+        self.particles = particles.copy()
+        if weights is None:
+            self.weights.fill(1.0 / self.particle_count)
+        else:
+            weights = np.asarray(weights, dtype=float)
+            if weights.shape != (self.particle_count,):
+                raise ValueError("reconfigured weights have incorrect shape")
+            self.weights = weights.copy()
+        self._check_finite()
+
     def _check_finite(self) -> None:
         if not np.all(np.isfinite(self.particles)) or not np.all(np.isfinite(self.weights)):
             raise FloatingPointError("particles or weights contain NaN/Inf")
