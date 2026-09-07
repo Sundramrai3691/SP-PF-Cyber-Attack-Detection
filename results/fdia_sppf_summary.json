@@ -1,0 +1,21 @@
+{
+  "particle_count_per_partition": 600,
+  "number_of_partitions": 3,
+  "attack_start_index": 120,
+  "attack_end_index_exclusive": 190,
+  "attacked_measurement_indices": [
+    6,
+    7
+  ],
+  "attack_magnitude": 0.3,
+  "detection_index": 120,
+  "detection_delay_steps": 0,
+  "detection_delay_seconds": 0.0,
+  "threshold": 26.144495838928968,
+  "maximum_detection_score": 321.16683107795916,
+  "state_rmse": 0.003908368092554722,
+  "baseline_detection_index": 120,
+  "baseline_threshold": 411.88135438606423,
+  "seed": 20260907,
+  "calibration_start_index": 30
+}

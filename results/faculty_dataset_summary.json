@@ -1,0 +1,460 @@
+{
+  "inspection_title": "FACULTY DATASET INSPECTION",
+  "files": [
+    {
+      "path": "data_statedata.xlsx",
+      "file_type": ".xlsx",
+      "bytes": 1058511
+    }
+  ],
+  "workbooks": [
+    {
+      "file": "data_statedata.xlsx",
+      "sheet_names": [
+        "Stable swing",
+        "Voltage stress",
+        "load encroachement"
+      ],
+      "workbook_metadata": {
+        "creator": "Monalisa",
+        "title": null,
+        "subject": null,
+        "description": null,
+        "keywords": null,
+        "created": "2026-09-03T10:20:35",
+        "modified": "2026-09-03T12:12:36"
+      },
+      "sheets": [
+        {
+          "sheet": "Stable swing",
+          "rows": 6001,
+          "columns": 4,
+          "column_names": [
+            "Time (ms)",
+            "VC (in Kv)",
+            "Vb(in Kv)",
+            "Va(in Kv)"
+          ],
+          "data_types": {
+            "Time (ms)": "float64",
+            "VC (in Kv)": "float64",
+            "Vb(in Kv)": "float64",
+            "Va(in Kv)": "float64"
+          },
+          "missing_values": {
+            "Time (ms)": 0,
+            "VC (in Kv)": 0,
+            "Vb(in Kv)": 0,
+            "Va(in Kv)": 0
+          },
+          "duplicated_rows": 0,
+          "first_rows": [
+            {
+              "Time (ms)": 0.0,
+              "VC (in Kv)": -0.49766127404174,
+              "Vb(in Kv)": -56.923474720628,
+              "Va(in Kv)": 57.421135994632
+            },
+            {
+              "Time (ms)": 0.001,
+              "VC (in Kv)": -52.78387647232,
+              "Vb(in Kv)": -191.53084813568,
+              "Va(in Kv)": 244.31472460798
+            },
+            {
+              "Time (ms)": 0.002,
+              "VC (in Kv)": -96.631827508267,
+              "Vb(in Kv)": -156.10739293368,
+              "Va(in Kv)": 252.73922044192
+            },
+            {
+              "Time (ms)": 0.003,
+              "VC (in Kv)": -201.76141239324,
+              "Vb(in Kv)": -119.49623810235,
+              "Va(in Kv)": 321.25765049557
+            },
+            {
+              "Time (ms)": 0.004,
+              "VC (in Kv)": -243.93537463362,
+              "Vb(in Kv)": 17.832665632679,
+              "Va(in Kv)": 226.10270900095
+            }
+          ],
+          "last_rows": [
+            {
+              "Time (ms)": 5.996,
+              "VC (in Kv)": -93.766287554969,
+              "Vb(in Kv)": -150.17458605482,
+              "Va(in Kv)": 243.9408736171
+            },
+            {
+              "Time (ms)": 5.997,
+              "VC (in Kv)": -170.51884929152,
+              "Vb(in Kv)": -68.405776201723,
+              "Va(in Kv)": 238.92462550069
+            },
+            {
+              "Time (ms)": 5.998,
+              "VC (in Kv)": -223.6178080728,
+              "Vb(in Kv)": 22.852379029965,
+              "Va(in Kv)": 200.76542905031
+            },
+            {
+              "Time (ms)": 5.999,
+              "VC (in Kv)": -245.68391172536,
+              "Vb(in Kv)": 110.94100323204,
+              "Va(in Kv)": 134.74290850067
+            },
+            {
+              "Time (ms)": 6.0,
+              "VC (in Kv)": -233.65224850362,
+              "Vb(in Kv)": 183.62166755415,
+              "Va(in Kv)": 50.030580956887
+            }
+          ],
+          "time": {
+            "column": "Time (ms)",
+            "unit": "ms",
+            "time_start": 0.0,
+            "time_end": 6.0,
+            "mean_dt": 0.001,
+            "min_dt": 0.0009999999999994458,
+            "max_dt": 0.001000000000000334,
+            "is_uniform": true,
+            "strictly_increasing": true
+          },
+          "signal_ranges": {
+            "VC (in Kv)": {
+              "unit": "in Kv",
+              "min": -308.9889182913,
+              "max": 325.42820959415,
+              "mean": -0.1927722034018369,
+              "std": 189.89984937783777,
+              "rms": 189.89994722181433,
+              "zero_crossings": 622,
+              "dominant_frequency_hz": 49825.02916180637
+            },
+            "Vb(in Kv)": {
+              "unit": "in Kv",
+              "min": -309.01160799948,
+              "max": 309.23935495437,
+              "mean": 0.0037786770955269135,
+              "std": 189.89377538507523,
+              "rms": 189.89377542267098,
+              "zero_crossings": 623,
+              "dominant_frequency_hz": 49825.02916180637
+            },
+            "Va(in Kv)": {
+              "unit": "in Kv",
+              "min": -311.27638888298,
+              "max": 321.25765049557,
+              "mean": 0.18949076453153632,
+              "std": 189.85807903892393,
+              "rms": 189.8581736009807,
+              "zero_crossings": 622,
+              "dominant_frequency_hz": 49825.02916180637
+            }
+          },
+          "representation_assessment": "Evidence supports instantaneous sampled three-phase voltage waveforms in the labelled kV unit; this is not a voltage-phasor/PMU representation.",
+          "plots": [
+            "results\\faculty_data\\stable_swing_voltage.png",
+            "results\\faculty_data\\stable_swing_voltage_zoom.png"
+          ]
+        },
+        {
+          "sheet": "Voltage stress",
+          "rows": 6501,
+          "columns": 4,
+          "column_names": [
+            "Time (ms)",
+            "VA (in kV)",
+            "VB (in kV)",
+            "VC (in kV)"
+          ],
+          "data_types": {
+            "Time (ms)": "float64",
+            "VA (in kV)": "float64",
+            "VB (in kV)": "float64",
+            "VC (in kV)": "float64"
+          },
+          "missing_values": {
+            "Time (ms)": 0,
+            "VA (in kV)": 0,
+            "VB (in kV)": 0,
+            "VC (in kV)": 0
+          },
+          "duplicated_rows": 0,
+          "first_rows": [
+            {
+              "Time (ms)": 0.0,
+              "VA (in kV)": 0.0,
+              "VB (in kV)": 0.0,
+              "VC (in kV)": 0.0
+            },
+            {
+              "Time (ms)": 0.001,
+              "VA (in kV)": 112.36106283697,
+              "VB (in kV)": -150.68215140358,
+              "VC (in kV)": 38.32108856661
+            },
+            {
+              "Time (ms)": 0.002,
+              "VA (in kV)": 307.98600194454,
+              "VB (in kV)": -336.04075919236,
+              "VC (in kV)": 28.054764412085
+            },
+            {
+              "Time (ms)": 0.003,
+              "VA (in kV)": 362.63933479762,
+              "VB (in kV)": -286.34933536732,
+              "VC (in kV)": -76.289991636074
+            },
+            {
+              "Time (ms)": 0.004,
+              "VA (in kV)": 352.48294450444,
+              "VB (in kV)": -155.84957149847,
+              "VC (in kV)": -196.63363273178
+            }
+          ],
+          "last_rows": [
+            {
+              "Time (ms)": 6.496,
+              "VA (in kV)": -140.68565376603,
+              "VB (in kV)": -71.605970634018,
+              "VC (in kV)": 212.28948442319
+            },
+            {
+              "Time (ms)": 6.497,
+              "VA (in kV)": -78.696816351216,
+              "VB (in kV)": -134.86393959979,
+              "VC (in kV)": 213.56048074708
+            },
+            {
+              "Time (ms)": 6.498,
+              "VA (in kV)": -7.8975084984758,
+              "VB (in kV)": -183.002859741,
+              "VC (in kV)": 190.90221890767
+            },
+            {
+              "Time (ms)": 6.499,
+              "VA (in kV)": 63.817634082851,
+              "VB (in kV)": -210.63083035821,
+              "VC (in kV)": 146.81544983519
+            },
+            {
+              "Time (ms)": 6.5,
+              "VA (in kV)": 128.37453133171,
+              "VB (in kV)": -214.63787373701,
+              "VC (in kV)": 86.263893971277
+            }
+          ],
+          "time": {
+            "column": "Time (ms)",
+            "unit": "ms",
+            "time_start": 0.0,
+            "time_end": 6.5,
+            "mean_dt": 0.001,
+            "min_dt": 0.0009999999999994458,
+            "max_dt": 0.001000000000000334,
+            "is_uniform": true,
+            "strictly_increasing": true
+          },
+          "signal_ranges": {
+            "VA (in kV)": {
+              "unit": "in kV",
+              "min": -328.51531806191,
+              "max": 362.63933479762,
+              "mean": -0.027537435534714747,
+              "std": 195.5514121884363,
+              "rms": 195.55141412733906,
+              "zero_crossings": 664,
+              "dominant_frequency_hz": 49992.3088755576
+            },
+            "VB (in kV)": {
+              "unit": "in kV",
+              "min": -336.04075919236,
+              "max": 329.96319069232,
+              "mean": -0.030876295423099064,
+              "std": 195.53769714655044,
+              "rms": 195.53769958430445,
+              "zero_crossings": 665,
+              "dominant_frequency_hz": 49992.3088755576
+            },
+            "VC (in kV)": {
+              "unit": "in kV",
+              "min": -328.0503819315,
+              "max": 329.19575964695,
+              "mean": 0.05841220326326421,
+              "std": 195.49500581529858,
+              "rms": 195.49501454182692,
+              "zero_crossings": 664,
+              "dominant_frequency_hz": 49992.3088755576
+            }
+          },
+          "representation_assessment": "Evidence supports instantaneous sampled three-phase voltage waveforms in the labelled kV unit; this is not a voltage-phasor/PMU representation.",
+          "plots": [
+            "results\\faculty_data\\voltage_stress_voltage.png",
+            "results\\faculty_data\\voltage_stress_voltage_zoom.png"
+          ]
+        },
+        {
+          "sheet": "load encroachement",
+          "rows": 7001,
+          "columns": 4,
+          "column_names": [
+            "Time (ms)",
+            "VA (in kV)",
+            "VB (in kV)",
+            "VC (in kV)"
+          ],
+          "data_types": {
+            "Time (ms)": "float64",
+            "VA (in kV)": "float64",
+            "VB (in kV)": "float64",
+            "VC (in kV)": "float64"
+          },
+          "missing_values": {
+            "Time (ms)": 0,
+            "VA (in kV)": 0,
+            "VB (in kV)": 0,
+            "VC (in kV)": 0
+          },
+          "duplicated_rows": 0,
+          "first_rows": [
+            {
+              "Time (ms)": 0.0,
+              "VA (in kV)": 0.0,
+              "VB (in kV)": 0.0,
+              "VC (in kV)": 0.0
+            },
+            {
+              "Time (ms)": 0.001,
+              "VA (in kV)": 101.70750487383,
+              "VB (in kV)": -152.91974156568,
+              "VC (in kV)": 51.212236691851
+            },
+            {
+              "Time (ms)": 0.002,
+              "VA (in kV)": 311.7513754879,
+              "VB (in kV)": -374.2996343789,
+              "VC (in kV)": 62.548268524296
+            },
+            {
+              "Time (ms)": 0.003,
+              "VA (in kV)": 389.20203545121,
+              "VB (in kV)": -345.23703012978,
+              "VC (in kV)": -43.964963280179
+            },
+            {
+              "Time (ms)": 0.004,
+              "VA (in kV)": 329.35154628374,
+              "VB (in kV)": -120.86592523419,
+              "VC (in kV)": -208.48570153909
+            }
+          ],
+          "last_rows": [
+            {
+              "Time (ms)": 6.996,
+              "VA (in kV)": 202.94005098312,
+              "VB (in kV)": -196.73338541255,
+              "VC (in kV)": -6.2084511009312
+            },
+            {
+              "Time (ms)": 6.997,
+              "VA (in kV)": 227.81483195027,
+              "VB (in kV)": -145.98732007548,
+              "VC (in kV)": -81.835621840167
+            },
+            {
+              "Time (ms)": 6.998,
+              "VA (in kV)": 227.31402018206,
+              "VB (in kV)": -78.999456013993,
+              "VC (in kV)": -148.32145808103
+            },
+            {
+              "Time (ms)": 6.999,
+              "VA (in kV)": 201.47699716121,
+              "VB (in kV)": -3.200431793484,
+              "VC (in kV)": -198.27583796191
+            },
+            {
+              "Time (ms)": 7.0,
+              "VA (in kV)": 153.15475895333,
+              "VB (in kV)": 72.957584052498,
+              "VC (in kV)": -226.10467946031
+            }
+          ],
+          "time": {
+            "column": "Time (ms)",
+            "unit": "ms",
+            "time_start": 0.0,
+            "time_end": 7.0,
+            "mean_dt": 0.001,
+            "min_dt": 0.0009999999999994458,
+            "max_dt": 0.001000000000000334,
+            "is_uniform": true,
+            "strictly_increasing": true
+          },
+          "signal_ranges": {
+            "VA (in kV)": {
+              "unit": "in kV",
+              "min": -320.83652119067,
+              "max": 389.20203545121,
+              "mean": 0.13539105363510612,
+              "std": 198.74484971521076,
+              "rms": 198.7448958314631,
+              "zero_crossings": 708,
+              "dominant_frequency_hz": 49992.858163119556
+            },
+            "VB (in kV)": {
+              "unit": "in kV",
+              "min": -374.2996343789,
+              "max": 423.56116485597,
+              "mean": -0.046194664250235766,
+              "std": 198.7072556746222,
+              "rms": 198.70726104419705,
+              "zero_crossings": 710,
+              "dominant_frequency_hz": 49992.858163119556
+            },
+            "VC (in kV)": {
+              "unit": "in kV",
+              "min": -322.01812794172,
+              "max": 329.82462262899,
+              "mean": -0.08919859404944337,
+              "std": 198.67077794030632,
+              "rms": 198.67079796436036,
+              "zero_crossings": 709,
+              "dominant_frequency_hz": 49992.858163119556
+            }
+          },
+          "representation_assessment": "Evidence supports instantaneous sampled three-phase voltage waveforms in the labelled kV unit; this is not a voltage-phasor/PMU representation.",
+          "plots": [
+            "results\\faculty_data\\load_encroachement_voltage.png",
+            "results\\faculty_data\\load_encroachement_voltage_zoom.png"
+          ]
+        }
+      ]
+    }
+  ],
+  "integration_assessment": "The faculty dataset is retained as an external measurement dataset and requires a measurement/state observation model before it can be used directly by the current SP-PF state estimator. Its three phase voltages are not equivalent to [delta, omega] generator states or to the synthetic model's nine measurements.",
+  "scenario_observations": [
+    {
+      "scenario_sheet_name": "Stable swing",
+      "mean_phase_rms_kv": 189.88396541515536,
+      "maximum_absolute_phase_voltage_kv": 325.42820959415,
+      "statement": "This is an observed waveform-amplitude comparison only; the sheet name supplies no validated physical mechanism or event metadata."
+    },
+    {
+      "scenario_sheet_name": "Voltage stress",
+      "mean_phase_rms_kv": 195.52804275115682,
+      "maximum_absolute_phase_voltage_kv": 362.63933479762,
+      "statement": "This is an observed waveform-amplitude comparison only; the sheet name supplies no validated physical mechanism or event metadata."
+    },
+    {
+      "scenario_sheet_name": "load encroachement",
+      "mean_phase_rms_kv": 198.7076516133402,
+      "maximum_absolute_phase_voltage_kv": 423.56116485597,
+      "statement": "This is an observed waveform-amplitude comparison only; the sheet name supplies no validated physical mechanism or event metadata."
+    }
+  ]
+}
