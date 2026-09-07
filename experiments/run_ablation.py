@@ -132,7 +132,7 @@ def _shared_case(config: AblationConfig, seed: int, magnitude: float) -> dict[st
     # from modifying the common physical/noise/attack realisation.
     pf_seed = int(rng.integers(0, np.iinfo(np.int64).max))
     return {
-        "system": system, "truth": truth, "attacked": attacked, "attack_mask": attack_mask,
+        "system": system, "truth": truth, "clean": clean, "attacked": attacked, "attack_mask": attack_mask,
         "initial": initial, "r": r, "q": _covariance(filter_process_std),
         "initial_covariance": _covariance(initial_std), "pf_seed": pf_seed,
     }
@@ -167,7 +167,7 @@ def _run_full_pf(case: dict[str, Any], config: AblationConfig) -> dict[str, Any]
         effective_sizes.append(pf.effective_sample_size())
     _validate_filter(pf, config.particle_count)
     return {"estimates": estimates, "prior": prior, "log_likelihoods": log_likelihoods,
-            "partition_counts": partition_counts, "effective_sizes": np.asarray(effective_sizes),
+            "partition_counts": partition_counts, "particle_count_history": np.full(steps, config.particle_count, dtype=int), "effective_sizes": np.asarray(effective_sizes),
             "merge_count": 0, "split_count": 0, "particles_total_final": config.particle_count}
 
 
@@ -202,7 +202,7 @@ def _run_sppf(case: dict[str, Any], config: AblationConfig, adaptive: bool) -> d
         raise FloatingPointError("SP-PF ablation produced NaN/Inf")
     return {
         "estimates": estimates, "prior": prior, "log_likelihoods": log_likelihoods,
-        "partition_counts": partition_counts, "effective_sizes": effective_sizes,
+        "partition_counts": partition_counts, "particle_count_history": partition_counts * config.particle_count, "effective_sizes": effective_sizes,
         "merge_count": sum(event["operation"] == "merge" for event in sppf.partition_history),
         "split_count": sum(event["operation"] == "split" for event in sppf.partition_history),
         "particles_total_final": config.particle_count * len(sppf.filters),
@@ -264,7 +264,7 @@ def run_estimator_case(config: AblationConfig, seed: int, magnitude: float, esti
             "particles_total_final": estimator["particles_total_final"], "num_partitions_initial": int(estimator["partition_counts"][0]),
             "num_partitions_final": int(estimator["partition_counts"][-1]), "mean_num_partitions": float(np.mean(estimator["partition_counts"])),
             "merge_count": estimator["merge_count"], "split_count": estimator["split_count"],
-            "partition_counts": estimator["partition_counts"], **metrics, **details,
+            "partition_counts": estimator["partition_counts"], "particle_count_history": estimator["particle_count_history"], **metrics, **details,
         })
     return outputs
 
@@ -396,7 +396,7 @@ def _serialisable_raw(raw: pd.DataFrame) -> list[dict[str, object]]:
     for row in raw.to_dict(orient="records"):
         # Arrays are retained in-memory for plotting but result JSON remains a
         # compact metric file rather than an unnecessary particle trace dump.
-        row.pop("scores", None); row.pop("log_likelihoods", None); row.pop("partition_counts", None)
+        row.pop("scores", None); row.pop("log_likelihoods", None); row.pop("partition_counts", None); row.pop("particle_count_history", None)
         rows.append(row)
     return rows
 
@@ -412,7 +412,7 @@ def run_ablation(config: AblationConfig = AblationConfig()) -> dict[str, Any]:
     summary = aggregate_metrics(raw)
     directory = Path(config.output_directory); directory.mkdir(parents=True, exist_ok=True)
     raw_csv = raw.copy()
-    for column in ("scores", "log_likelihoods", "partition_counts"):
+    for column in ("scores", "log_likelihoods", "partition_counts", "particle_count_history"):
         raw_csv[column] = raw_csv[column].apply(lambda value: json.dumps(np.asarray(value).tolist()))
     raw_csv["attack_channels"] = raw_csv["attack_channels"].apply(lambda value: ",".join(map(str, value)))
     raw_csv.to_csv(directory / "ablation_results.csv", index=False)

@@ -56,7 +56,7 @@
       "reference_log_likelihood_std": null,
       "merge_count": 0,
       "split_count": 0,
-      "runtime": 2.979282299987972
+      "runtime": 1.777492000022903
     },
     {
       "model_order": 4,
@@ -86,7 +86,7 @@
       "reference_log_likelihood_std": 3.141708352972872,
       "merge_count": 0,
       "split_count": 0,
-      "runtime": 4.435109300015029
+      "runtime": 1.3730291000101715
     },
     {
       "model_order": 4,
@@ -116,7 +116,7 @@
       "reference_log_likelihood_std": null,
       "merge_count": 1,
       "split_count": 0,
-      "runtime": 3.6643474000156857
+      "runtime": 1.2141823000274599
     },
     {
       "model_order": 4,
@@ -146,7 +146,7 @@
       "reference_log_likelihood_std": 3.2363888088582877,
       "merge_count": 1,
       "split_count": 0,
-      "runtime": 2.4799599000252783
+      "runtime": 1.368624699942302
     },
     {
       "model_order": 4,
@@ -176,7 +176,7 @@
       "reference_log_likelihood_std": null,
       "merge_count": 0,
       "split_count": 0,
-      "runtime": 1.5435225000255741
+      "runtime": 1.3654588999925181
     },
     {
       "model_order": 4,
@@ -206,7 +206,7 @@
       "reference_log_likelihood_std": 3.141708352972872,
       "merge_count": 0,
       "split_count": 0,
-      "runtime": 1.3971240000100806
+      "runtime": 1.4033953999751247
     },
     {
       "model_order": 4,
@@ -236,7 +236,7 @@
       "reference_log_likelihood_std": null,
       "merge_count": 1,
       "split_count": 0,
-      "runtime": 1.5032790999975987
+      "runtime": 1.2146117000374943
     },
     {
       "model_order": 4,
@@ -266,7 +266,7 @@
       "reference_log_likelihood_std": 3.2363888088582877,
       "merge_count": 1,
       "split_count": 0,
-      "runtime": 2.031548800005112
+      "runtime": 1.4676565999980085
     },
     {
       "model_order": 4,
@@ -296,7 +296,7 @@
       "reference_log_likelihood_std": null,
       "merge_count": 0,
       "split_count": 0,
-      "runtime": 1.8857031000079587
+      "runtime": 1.4307509000063874
     },
     {
       "model_order": 4,
@@ -326,7 +326,7 @@
       "reference_log_likelihood_std": 3.141708352972872,
       "merge_count": 0,
       "split_count": 0,
-      "runtime": 1.8309456999995746
+      "runtime": 1.4542533000349067
     },
     {
       "model_order": 4,
@@ -356,7 +356,7 @@
       "reference_log_likelihood_std": null,
       "merge_count": 1,
       "split_count": 0,
-      "runtime": 1.220763299963437
+      "runtime": 1.2515189000405371
     },
     {
       "model_order": 4,
@@ -386,7 +386,7 @@
       "reference_log_likelihood_std": 3.2363888088582877,
       "merge_count": 1,
       "split_count": 0,
-      "runtime": 1.2382335999864154
+      "runtime": 1.2223991000209935
     },
     {
       "model_order": 4,
@@ -416,7 +416,7 @@
       "reference_log_likelihood_std": null,
       "merge_count": 0,
       "split_count": 0,
-      "runtime": 1.6258284999639727
+      "runtime": 1.3968554000020958
     },
     {
       "model_order": 4,
@@ -446,7 +446,7 @@
       "reference_log_likelihood_std": 3.141708352972872,
       "merge_count": 0,
       "split_count": 0,
-      "runtime": 1.3486115999985486
+      "runtime": 1.4503861000412144
     },
     {
       "model_order": 4,
@@ -476,7 +476,7 @@
       "reference_log_likelihood_std": null,
       "merge_count": 1,
       "split_count": 0,
-      "runtime": 1.2111482999753207
+      "runtime": 1.248293399985414
     },
     {
       "model_order": 4,
@@ -506,7 +506,7 @@
       "reference_log_likelihood_std": 3.2363888088582877,
       "merge_count": 1,
       "split_count": 0,
-      "runtime": 1.2555184999946505
+      "runtime": 1.227316799981054
     },
     {
       "model_order": 4,
@@ -536,7 +536,7 @@
       "reference_log_likelihood_std": null,
       "merge_count": 0,
       "split_count": 0,
-      "runtime": 1.700096399988979
+      "runtime": 1.3934539000038058
     },
     {
       "model_order": 4,
@@ -566,7 +566,7 @@
       "reference_log_likelihood_std": 3.141708352972872,
       "merge_count": 0,
       "split_count": 0,
-      "runtime": 1.5201378000201657
+      "runtime": 1.4097603000118397
     },
     {
       "model_order": 4,
@@ -596,7 +596,7 @@
       "reference_log_likelihood_std": null,
       "merge_count": 1,
       "split_count": 0,
-      "runtime": 1.277636699960567
+      "runtime": 1.2397867999970913
     },
     {
       "model_order": 4,
@@ -626,7 +626,7 @@
       "reference_log_likelihood_std": 3.2363888088582877,
       "merge_count": 1,
       "split_count": 0,
-      "runtime": 1.3295317000010982
+      "runtime": 1.2862888999516144
     }
   ]
 }

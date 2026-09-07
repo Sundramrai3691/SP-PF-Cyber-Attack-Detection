@@ -266,3 +266,34 @@ delay variation, RMSE/MSE, pre-attack false-alarm rate, TP/TN/FP/FN,
 precision/recall/F1, runtime, and adaptive partition events. Classification
 uses only the post-warm-up pre-attack normal window and the injected attack
 window; post-attack recovery samples are excluded from false-alarm metrics.
+
+## Equal-Particle-Budget Ablation
+
+The earlier ablation compared a 350-particle full PF to an SP-PF with 350
+particles in each initial partition, so it was not a fair total-budget runtime
+comparison. Run the corrected study with:
+
+```powershell
+python -m experiments.run_equal_budget
+```
+
+It uses 1050 total particles for the full PF and 3 x 350 for fixed SP-PF.
+Adaptive-KL starts with 1050 particles; because the existing adaptive filter
+retains 350 particles per active filter, a merge reduces the active total to
+700. The experiment logs this per-sample count rather than claiming equality
+after repartitioning. Results are saved in `results/equal_budget/`.
+
+## Replay Detection Evaluation
+
+Run the likelihood-vs-residual replay evaluation with:
+
+```powershell
+python -m experiments.run_replay_comparison
+```
+
+It uses the existing replay implementation on fourth-order fixed SP-PF over
+five deterministic seeds. Replay intensity is the dimensionless blend in
+`[0, 1]`: zero leaves the current measurement unchanged and one substitutes a
+delayed clean/noisy measurement-history window. It is not a physical power
+percentage. The study records both detector outcomes without replay-specific
+threshold tuning, under `results/replay_comparison/`.
