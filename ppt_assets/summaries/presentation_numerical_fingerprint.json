@@ -1,0 +1,68 @@
+{
+  "full_pf": {
+    "control_rmse": 0.006903279640350401,
+    "at_15pct_detection": 0.4,
+    "at_20pct_detection": 0.8,
+    "at_20pct_rmse": 0.007312340843236273,
+    "mean_runtime_control": 1.280734739988111,
+    "mean_partitions": 1.0
+  },
+  "fixed_sppf": {
+    "control_rmse": 0.0044853634545089505,
+    "at_15pct_detection": 1.0,
+    "at_20pct_detection": 1.0,
+    "at_20pct_rmse": 0.004945866408929729,
+    "mean_runtime_control": 1.7235830000019632,
+    "mean_partitions": 3.0
+  },
+  "adaptive_kl": {
+    "control_rmse": 0.004504425668787162,
+    "at_15pct_detection": 1.0,
+    "at_20pct_detection": 1.0,
+    "at_20pct_rmse": 0.005048088968242641,
+    "mean_runtime_control": 1.437939080002252,
+    "mean_partitions": 2.422222222222222
+  },
+  "replay": {
+    "residual": {
+      "max_detection_rate_any_blend": 0.0,
+      "mean_false_alarm_rate_all": 0.0,
+      "at_30pct_blend_detection": 0.0
+    },
+    "likelihood": {
+      "max_detection_rate_any_blend": 0.0,
+      "mean_false_alarm_rate_all": 0.0,
+      "at_30pct_blend_detection": 0.0
+    }
+  },
+  "config": {
+    "equal_budget_seeds": [
+      20260907,
+      20260908,
+      20260909,
+      20260910,
+      20260911
+    ],
+    "equal_budget_magnitudes": [
+      0.0,
+      0.01,
+      0.02,
+      0.05,
+      0.075,
+      0.1,
+      0.15,
+      0.2,
+      0.3
+    ],
+    "total_particles_equal": 1050,
+    "sppf_per_partition": 350,
+    "replay_seeds": [
+      20260907,
+      20260908,
+      20260909,
+      20260910,
+      20260911
+    ],
+    "replay_delay_steps": 20
+  }
+}
