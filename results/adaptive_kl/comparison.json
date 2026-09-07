@@ -47,7 +47,7 @@
       "merge_count": 0,
       "split_count": 0,
       "average_particles_per_partition": 116.66666666666667,
-      "runtime": 0.39064509997842833
+      "runtime": 0.6040142000420019
     },
     {
       "model_order": 4,
@@ -65,7 +65,7 @@
       "merge_count": 0,
       "split_count": 0,
       "average_particles_per_partition": 116.66666666666667,
-      "runtime": 1.4722551999730058
+      "runtime": 1.4237362000276335
     },
     {
       "model_order": 4,
@@ -83,7 +83,7 @@
       "merge_count": 1,
       "split_count": 0,
       "average_particles_per_partition": 157.5,
-      "runtime": 1.0526712999562733
+      "runtime": 1.0374714999925345
     },
     {
       "model_order": 2,
@@ -101,7 +101,7 @@
       "merge_count": 0,
       "split_count": 0,
       "average_particles_per_partition": 116.66666666666667,
-      "runtime": 0.3801888999878429
+      "runtime": 0.3846313999965787
     },
     {
       "model_order": 4,
@@ -119,7 +119,7 @@
       "merge_count": 0,
       "split_count": 0,
       "average_particles_per_partition": 116.66666666666667,
-      "runtime": 1.1738547999993898
+      "runtime": 1.2264663999667391
     },
     {
       "model_order": 4,
@@ -137,7 +137,7 @@
       "merge_count": 1,
       "split_count": 0,
       "average_particles_per_partition": 157.5,
-      "runtime": 1.0659396999981254
+      "runtime": 1.04643709998345
     },
     {
       "model_order": 2,
@@ -155,7 +155,7 @@
       "merge_count": 0,
       "split_count": 0,
       "average_particles_per_partition": 116.66666666666667,
-      "runtime": 0.45861440000589937
+      "runtime": 0.390291600022465
     },
     {
       "model_order": 4,
@@ -173,7 +173,7 @@
       "merge_count": 0,
       "split_count": 0,
       "average_particles_per_partition": 116.66666666666667,
-      "runtime": 1.2095942000159994
+      "runtime": 1.2021295999875292
     },
     {
       "model_order": 4,
@@ -191,7 +191,7 @@
       "merge_count": 1,
       "split_count": 0,
       "average_particles_per_partition": 157.5,
-      "runtime": 1.0547399999923073
+      "runtime": 1.062659299990628
     },
     {
       "model_order": 2,
@@ -209,7 +209,7 @@
       "merge_count": 0,
       "split_count": 0,
       "average_particles_per_partition": 116.66666666666667,
-      "runtime": 0.38495629996759817
+      "runtime": 0.4137087000417523
     },
     {
       "model_order": 4,
@@ -227,7 +227,7 @@
       "merge_count": 0,
       "split_count": 0,
       "average_particles_per_partition": 116.66666666666667,
-      "runtime": 1.3345606999937445
+      "runtime": 1.2754955000127666
     },
     {
       "model_order": 4,
@@ -245,7 +245,7 @@
       "merge_count": 1,
       "split_count": 0,
       "average_particles_per_partition": 157.5,
-      "runtime": 1.2202617999864742
+      "runtime": 1.1467687000404112
     },
     {
       "model_order": 2,
@@ -263,7 +263,7 @@
       "merge_count": 0,
       "split_count": 0,
       "average_particles_per_partition": 116.66666666666667,
-      "runtime": 0.39450879994546995
+      "runtime": 0.4014315999811515
     },
     {
       "model_order": 4,
@@ -281,7 +281,7 @@
       "merge_count": 0,
       "split_count": 0,
       "average_particles_per_partition": 116.66666666666667,
-      "runtime": 1.2321874999906868
+      "runtime": 1.8879211999592371
     },
     {
       "model_order": 4,
@@ -299,7 +299,7 @@
       "merge_count": 1,
       "split_count": 0,
       "average_particles_per_partition": 157.5,
-      "runtime": 1.0673889000318013
+      "runtime": 1.9677181000006385
     }
   ]
 }

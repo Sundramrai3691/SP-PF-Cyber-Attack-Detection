@@ -211,3 +211,58 @@ numerically comparable with the paper. Delta/omega/overall values are reported
 as **prototype MSE**, not as a comparison against paper MSE. The detector is
 still the residual/J-statistic prototype, so replay misses or other outcomes are
 reported rather than hidden.
+
+## Optional Particle-Likelihood Detector Extension
+
+The residual/J-statistic detector remains the default in all original scripts.
+An explicit fourth-order comparison of it against the new particle-likelihood
+detector is available with:
+
+```powershell
+python -m experiments.run_likelihood_detector
+```
+
+For each partition, the likelihood engine evaluates the complete Gaussian
+measurement log-density of every **predicted particle** under the same local
+measurement covariance used for the particle-filter update. It then computes
+the weighted predictive likelihood using the pre-update particle weights and
+log-sum-exp. Partition log likelihoods are summed, which is the numerical form
+of the conditional SP-PF product approximation. The normal reference is fitted
+only on attack-free samples. The alarm statistic is the one-sided normal
+reference degradation `log(L_ref / L_k) = mean(log L_normal) - log L_k`, with
+a configurable `4 * std(log L_normal)` threshold.
+
+The experiment compares residual and likelihood detector choices over 0%,
+10%, 15%, 20%, and 30% FDIA in both fourth-order fixed and adaptive-KL modes.
+It writes CSV/JSON results, score and likelihood plots, and a candid paper
+comparison note under `results/likelihood_detector/`. This is a
+likelihood-ratio-style H0 degradation test, not a reproduction of the paper's
+exact H1 likelihood model or numerical threshold.
+
+## Baseline and Ablation Study
+
+Run the multi-seed, low-intensity fourth-order ablation with:
+
+```powershell
+python -m experiments.run_ablation
+```
+
+This study compares three estimators: a genuine single 12-dimensional full
+particle filter, the fixed generator-wise SP-PF, and the optional adaptive-KL
+SP-PF. Each estimator is evaluated using both the residual/J-statistic and the
+particle-likelihood detector for 0%, 1%, 2%, 5%, 7.5%, 10%, 15%, 20%, and 30%
+FDIA over five recorded deterministic random seeds.
+
+All modes share the fourth-order model, attack timing/channels, process and
+measurement covariance, and attack-free calibration window. They use 350
+particles **per filter**: the full PF has 350 total particles, whereas the
+initial fixed SP-PF has 350 particles in each of three partitions. This
+different total computational budget is retained and reported rather than
+hidden; interpret runtime and accuracy comparisons accordingly.
+
+The experiment writes per-seed and aggregate CSV/JSON metrics plus a Markdown
+summary and plots under `results/ablation/`. It reports detection rate and
+delay variation, RMSE/MSE, pre-attack false-alarm rate, TP/TN/FP/FN,
+precision/recall/F1, runtime, and adaptive partition events. Classification
+uses only the post-warm-up pre-attack normal window and the injected attack
+window; post-attack recovery samples are excluded from false-alarm metrics.

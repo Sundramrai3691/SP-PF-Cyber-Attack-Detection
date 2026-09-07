@@ -57,6 +57,10 @@ class StatePartitionParticleFilter:
         self.partition_history: list[dict[str, object]] = []
         self.kl_diagnostics: list[dict[str, object]] = []
         self.partition_count_history: list[int] = []
+        # Inputs used by the likelihood detector. They are captured before
+        # each PF weight update, so weights are the predictive/prior weights
+        # in sum_i w_(k|k-1)^i p(y_k | x_k^i).
+        self.last_likelihood_inputs: list[dict[str, object]] = []
 
     def _local_full_states(self, particles: np.ndarray, state_indices: Sequence[int], context: np.ndarray) -> np.ndarray:
         full = np.broadcast_to(context, (particles.shape[0], context.size)).copy()
@@ -103,6 +107,33 @@ class StatePartitionParticleFilter:
         self.partitioner = new_partitioner
         self.filters = new_filters
 
+    def capture_likelihood_inputs(self, measurement: np.ndarray) -> list[dict[str, object]]:
+        """Expose per-partition predictive measurement clouds for a detector.
+
+        This method does not mutate filters.  It is also used at sample zero,
+        before the first call to :meth:`step`, so every experiment sample has a
+        finite likelihood diagnostic.  Each dictionary contains only the
+        quantities required by the likelihood engine: local observation,
+        particle-predicted observation, *prior* particle weights and local R.
+        """
+        measurement = np.asarray(measurement, dtype=float)
+        if measurement.shape != (self.system.measurement_dimension,) or not np.all(np.isfinite(measurement)):
+            raise ValueError("likelihood measurement has incorrect shape or non-finite values")
+        context = self.global_estimate.copy()
+        inputs: list[dict[str, object]] = []
+        for partition, pf in zip(self.partitioner.partitions, self.filters):
+            measurement_indices = np.asarray(partition.measurement_indices)
+            full_particles = self._local_full_states(pf.particles, partition.state_indices, context)
+            inputs.append({
+                "partition_name": partition.name,
+                "measurement": measurement[measurement_indices].copy(),
+                "predicted_measurements": self.system.measurement(full_particles)[:, measurement_indices].copy(),
+                "weights": pf.weights.copy(),
+                "measurement_covariance": self.measurement_noise_covariance[np.ix_(measurement_indices, measurement_indices)].copy(),
+            })
+        self.last_likelihood_inputs = inputs
+        return inputs
+
     def step(self, measurement: np.ndarray, time: float, index: int | None = None) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
         """Advance all partitions; return posterior state, prior measurement, Neff."""
         measurement = np.asarray(measurement, dtype=float)
@@ -110,6 +141,7 @@ class StatePartitionParticleFilter:
         local_estimates: list[np.ndarray] = []
         prior_measurement = np.empty(self.system.measurement_dimension, dtype=float)
         effective_sizes: list[float] = []
+        likelihood_inputs: list[dict[str, object]] = []
         for partition, pf in zip(self.partitioner.partitions, self.filters):
             state_indices = np.asarray(partition.state_indices)
             measurement_indices = np.asarray(partition.measurement_indices)
@@ -124,12 +156,20 @@ class StatePartitionParticleFilter:
             full_particles = self._local_full_states(pf.particles, state_indices, context)
             particle_measurements = self.system.measurement(full_particles)[:, measurement_indices]
             prior_measurement[measurement_indices] = np.average(particle_measurements, axis=0, weights=pf.weights)
+            likelihood_inputs.append({
+                "partition_name": partition.name,
+                "measurement": measurement[measurement_indices].copy(),
+                "predicted_measurements": particle_measurements.copy(),
+                "weights": pf.weights.copy(),
+                "measurement_covariance": local_r.copy(),
+            })
             pf.update(measurement[measurement_indices], particle_measurements, local_r)
             if pf.effective_sample_size() < 0.5 * pf.particle_count:
                 pf.systematic_resample()
             local_estimates.append(pf.estimate())
             effective_sizes.append(pf.effective_sample_size())
         self.global_estimate = self.partitioner.combine(local_estimates)
+        self.last_likelihood_inputs = likelihood_inputs
         if not (np.all(np.isfinite(self.global_estimate)) and np.all(np.isfinite(prior_measurement))):
             raise FloatingPointError("SP-PF produced non-finite output")
         if self.partition_mode == "adaptive_kl":

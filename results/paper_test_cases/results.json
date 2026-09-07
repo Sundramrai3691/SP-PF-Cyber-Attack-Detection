@@ -43,7 +43,7 @@
       "overall_mse": 2.638524222274826e-06,
       "state_rmse": 0.0016243534782413667,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.9402312000165693
+      "runtime_seconds": 1.2467379000154324
     },
     {
       "test_case": "FDI-1 prototype strong electrical-power",
@@ -63,7 +63,7 @@
       "overall_mse": 1.1630241705831284e-05,
       "state_rmse": 0.0034103140186544823,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.3076057999860495
+      "runtime_seconds": 0.8034846999798901
     },
     {
       "test_case": "Replay nominal",
@@ -83,7 +83,7 @@
       "overall_mse": 2.9138266195648923e-06,
       "state_rmse": 0.001706993444499683,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.200213200005237
+      "runtime_seconds": 0.9424191999714822
     },
     {
       "test_case": "Hybrid nominal",
@@ -103,7 +103,7 @@
       "overall_mse": 5.0861423949131495e-06,
       "state_rmse": 0.002255247745794938,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.524269399989862
+      "runtime_seconds": 0.7385424000094645
     },
     {
       "test_case": "FDI-1 active +50%",
@@ -123,7 +123,7 @@
       "overall_mse": 1.2916010632804122e-05,
       "state_rmse": 0.0035938851724566998,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.1190511000459082
+      "runtime_seconds": 0.8022203000145964
     },
     {
       "test_case": "Replay active +50%",
@@ -143,7 +143,7 @@
       "overall_mse": 3.0042868772939945e-06,
       "state_rmse": 0.0017332878806747582,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.3651812999742106
+      "runtime_seconds": 0.7761035999865271
     },
     {
       "test_case": "Intensity fdi 0",
@@ -163,7 +163,7 @@
       "overall_mse": 2.638524222274826e-06,
       "state_rmse": 0.0016243534782413667,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.0086624999530613
+      "runtime_seconds": 0.7684415000258014
     },
     {
       "test_case": "Intensity fdi 0.005",
@@ -183,7 +183,7 @@
       "overall_mse": 2.5820352848395262e-06,
       "state_rmse": 0.0016068712720188653,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 0.9598303000093438
+      "runtime_seconds": 0.7406801000470296
     },
     {
       "test_case": "Intensity fdi 0.01",
@@ -203,7 +203,7 @@
       "overall_mse": 2.653718841098425e-06,
       "state_rmse": 0.0016290238921201938,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 0.8840641000424512
+      "runtime_seconds": 0.7681233999901451
     },
     {
       "test_case": "Intensity fdi 0.015",
@@ -223,7 +223,7 @@
       "overall_mse": 2.6447537663346664e-06,
       "state_rmse": 0.001626269893447784,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 0.9926215000450611
+      "runtime_seconds": 0.8282530999858864
     },
     {
       "test_case": "Intensity fdi 0.02",
@@ -243,7 +243,7 @@
       "overall_mse": 2.6054033231440053e-06,
       "state_rmse": 0.0016141261794370369,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 0.9441105999867432
+      "runtime_seconds": 0.7122521999990568
     },
     {
       "test_case": "Intensity fdi 0.025",
@@ -263,7 +263,7 @@
       "overall_mse": 2.7367963174478995e-06,
       "state_rmse": 0.0016543265449867808,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.0020650000078604
+      "runtime_seconds": 0.7527459000120871
     },
     {
       "test_case": "Intensity fdi 0.04",
@@ -283,7 +283,7 @@
       "overall_mse": 2.7980354450551565e-06,
       "state_rmse": 0.0016727329269955668,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 2.0158341000205837
+      "runtime_seconds": 0.7531322999857366
     },
     {
       "test_case": "Intensity fdi 0.045",
@@ -303,7 +303,7 @@
       "overall_mse": 3.003703629749139e-06,
       "state_rmse": 0.0017331196236120398,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 2.137601500027813
+      "runtime_seconds": 0.765093500027433
     },
     {
       "test_case": "Intensity replay 0",
@@ -323,7 +323,7 @@
       "overall_mse": 2.638524222274826e-06,
       "state_rmse": 0.0016243534782413667,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.2715712999925017
+      "runtime_seconds": 0.7372614999767393
     },
     {
       "test_case": "Intensity replay 0.005",
@@ -343,7 +343,7 @@
       "overall_mse": 2.6900587949223445e-06,
       "state_rmse": 0.0016401398705361517,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 0.8040718999691308
+      "runtime_seconds": 0.7645517000346445
     },
     {
       "test_case": "Intensity replay 0.01",
@@ -363,7 +363,7 @@
       "overall_mse": 2.6827297088183113e-06,
       "state_rmse": 0.0016379040597111637,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 0.8255305999773555
+      "runtime_seconds": 0.785720499989111
     },
     {
       "test_case": "Intensity replay 0.015",
@@ -383,7 +383,7 @@
       "overall_mse": 2.5809280460368773e-06,
       "state_rmse": 0.001606526702559555,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 0.8215591000043787
+      "runtime_seconds": 0.7839614000404254
     },
     {
       "test_case": "Intensity replay 0.02",
@@ -403,7 +403,7 @@
       "overall_mse": 2.6523092805926742e-06,
       "state_rmse": 0.0016285911950494742,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 0.9078614999889396
+      "runtime_seconds": 0.7485308000468649
     },
     {
       "test_case": "Intensity replay 0.025",
@@ -423,7 +423,7 @@
       "overall_mse": 2.6444305021114606e-06,
       "state_rmse": 0.0016261705021649669,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 0.9954433999955654
+      "runtime_seconds": 0.7807054999866523
     },
     {
       "test_case": "Intensity replay 0.04",
@@ -443,7 +443,7 @@
       "overall_mse": 2.621838715069015e-06,
       "state_rmse": 0.0016192092869882556,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 0.9342642999836244
+      "runtime_seconds": 0.7768073999905027
     },
     {
       "test_case": "Intensity replay 0.045",
@@ -463,7 +463,7 @@
       "overall_mse": 2.6590319585648545e-06,
       "state_rmse": 0.0016306538438812985,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.6563830000231974
+      "runtime_seconds": 0.756366399989929
     },
     {
       "test_case": "Intensity hybrid 0",
@@ -483,7 +483,7 @@
       "overall_mse": 2.638524222274826e-06,
       "state_rmse": 0.0016243534782413667,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.1077061999822035
+      "runtime_seconds": 0.8171827000332996
     },
     {
       "test_case": "Intensity hybrid 0.005",
@@ -503,7 +503,7 @@
       "overall_mse": 2.693233891966488e-06,
       "state_rmse": 0.0016411075199286877,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.039076799992472
+      "runtime_seconds": 0.7774218000122346
     },
     {
       "test_case": "Intensity hybrid 0.01",
@@ -523,7 +523,7 @@
       "overall_mse": 2.590736631821291e-06,
       "state_rmse": 0.0016095765380438702,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.1138997999951243
+      "runtime_seconds": 0.7496573000098579
     },
     {
       "test_case": "Intensity hybrid 0.015",
@@ -543,7 +543,7 @@
       "overall_mse": 2.6192410611010155e-06,
       "state_rmse": 0.0016184069516351613,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.4437282000435516
+      "runtime_seconds": 0.7918863000231795
     },
     {
       "test_case": "Intensity hybrid 0.02",
@@ -563,7 +563,7 @@
       "overall_mse": 2.680713120986254e-06,
       "state_rmse": 0.0016372883438741798,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.8446438999962993
+      "runtime_seconds": 0.9292149999528192
     },
     {
       "test_case": "Intensity hybrid 0.025",
@@ -583,7 +583,7 @@
       "overall_mse": 2.7392349469681624e-06,
       "state_rmse": 0.00165506342687166,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.7974054000223987
+      "runtime_seconds": 0.9051768999779597
     },
     {
       "test_case": "Intensity hybrid 0.04",
@@ -603,7 +603,7 @@
       "overall_mse": 2.852608282822357e-06,
       "state_rmse": 0.001688966631648582,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 2.6841206999961287
+      "runtime_seconds": 0.998630799993407
     },
     {
       "test_case": "Intensity hybrid 0.045",
@@ -623,7 +623,7 @@
       "overall_mse": 3.015640896091766e-06,
       "state_rmse": 0.0017365600755780855,
       "false_alarm_rate": 0.0,
-      "runtime_seconds": 1.6383504999685101
+      "runtime_seconds": 0.8716423999867402
     }
   ]
 }
