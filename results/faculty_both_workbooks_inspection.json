@@ -1,0 +1,1027 @@
+{
+  "files": [
+    {
+      "path": "C:\\Users\\HP\\DDET-MTD\\New Microsoft Excel Worksheet.xlsx",
+      "bytes": 875471,
+      "sheet_names": [
+        "Load encrochment",
+        "Voltage instable",
+        "Stable swing"
+      ],
+      "sheets": [
+        {
+          "sheet": "Load encrochment",
+          "rows": 7001,
+          "cols": 4,
+          "columns": [
+            "Unnamed: 0",
+            "Active power",
+            "Rotor angle",
+            "Load angle"
+          ],
+          "dtypes": {
+            "Unnamed: 0": "float64",
+            "Active power": "float64",
+            "Rotor angle": "float64",
+            "Load angle": "float64"
+          },
+          "missing": {
+            "Unnamed: 0": 7001,
+            "Active power": 0,
+            "Rotor angle": 0,
+            "Load angle": 0
+          },
+          "duplicated_rows": 0,
+          "head": [
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.0,
+              "Rotor angle": 3.4085619629,
+              "Load angle": 0.0
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": -0.0573029787,
+              "Rotor angle": 3.7227619629,
+              "Load angle": -1.1993449357
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": -1.818994472,
+              "Rotor angle": 4.0369619629,
+              "Load angle": -0.1686777263
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.9753623949,
+              "Rotor angle": 4.3511619629,
+              "Load angle": -0.0145155142
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 1.9069129371,
+              "Rotor angle": 4.6653619629,
+              "Load angle": -0.0559424845
+            }
+          ],
+          "tail": [
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.6158524555,
+              "Rotor angle": 4.0255250011,
+              "Load angle": 0.0124422508
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.6161605141,
+              "Rotor angle": 4.361013956,
+              "Load angle": 0.0124363579
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.6160561487,
+              "Rotor angle": 4.6965087888,
+              "Load angle": 0.0124386281
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.6158677237,
+              "Rotor angle": 5.0320094994,
+              "Load angle": 0.0124450601
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.6161804151,
+              "Rotor angle": 5.3675160899,
+              "Load angle": 0.0124397115
+            }
+          ],
+          "numeric": {
+            "Active power": {
+              "n": 7001,
+              "min": -1.8189944719989,
+              "max": 1.9069129370832,
+              "mean": 0.764318962760355,
+              "std": 0.1425009976662798,
+              "first": 0.0,
+              "last": 0.61618041509435
+            },
+            "Rotor angle": {
+              "n": 7001,
+              "min": 0.00011709415694128,
+              "max": 6.2811672269919,
+              "mean": 3.16131266906497,
+              "std": 1.8130894894050784,
+              "first": 3.4085619629176,
+              "last": 5.367516089896,
+              "angle_wrap": {
+                "max_abs_step": 5.969474114768318,
+                "large_jumps_gt_pi": 354,
+                "large_jumps_gt_pi_over_2": 354,
+                "range": [
+                  0.00011709415694128,
+                  6.2811672269919
+                ],
+                "looks_wrapped_0_2pi": true,
+                "looks_wrapped_pm_pi": false,
+                "looks_deg_0_360": false,
+                "unwrapped_range": [
+                  3.4085619629176,
+                  2229.61511483147
+                ],
+                "if_deg_unwrapped_rad_range": [
+                  2.0436785734723086e-06,
+                  0.1096270489793707
+                ]
+              }
+            },
+            "Load angle": {
+              "n": 7001,
+              "min": -1.1993449356729,
+              "max": 0.01603669271446,
+              "mean": 0.013820112791176864,
+              "std": 0.014961624717992656,
+              "first": 0.0,
+              "last": 0.012439711542205,
+              "angle_wrap": {
+                "max_abs_step": 1.1993449356729,
+                "large_jumps_gt_pi": 0,
+                "large_jumps_gt_pi_over_2": 0,
+                "range": [
+                  -1.1993449356729,
+                  0.01603669271446
+                ],
+                "looks_wrapped_0_2pi": false,
+                "looks_wrapped_pm_pi": false,
+                "looks_deg_0_360": false,
+                "unwrapped_range": [
+                  -1.1993449356729,
+                  0.01603669271446
+                ],
+                "if_deg_unwrapped_rad_range": [
+                  -0.0209325179946117,
+                  0.0002798930889979139
+                ]
+              }
+            }
+          }
+        },
+        {
+          "sheet": "Voltage instable",
+          "rows": 7001,
+          "cols": 4,
+          "columns": [
+            "Unnamed: 0",
+            "Active power",
+            "Rotor angle",
+            "Load angle"
+          ],
+          "dtypes": {
+            "Unnamed: 0": "float64",
+            "Active power": "float64",
+            "Rotor angle": "float64",
+            "Load angle": "float64"
+          },
+          "missing": {
+            "Unnamed: 0": 7001,
+            "Active power": 0,
+            "Rotor angle": 0,
+            "Load angle": 0
+          },
+          "duplicated_rows": 0,
+          "head": [
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.0,
+              "Rotor angle": 3.4085619629,
+              "Load angle": 0.0
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": -0.0574931322,
+              "Rotor angle": 3.7227619629,
+              "Load angle": 0.001
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": -1.7209342279,
+              "Rotor angle": 4.0369619629,
+              "Load angle": 0.002
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 1.3272570403,
+              "Rotor angle": 4.3511619629,
+              "Load angle": 0.003
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 2.0108164952,
+              "Rotor angle": 4.6653619629,
+              "Load angle": 0.004
+            }
+          ],
+          "tail": [
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.6166603859,
+              "Rotor angle": 1.6016688108,
+              "Load angle": 6.996
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.6169284785,
+              "Rotor angle": 1.9413301334,
+              "Load angle": 6.997
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.6175653177,
+              "Rotor angle": 2.2809946631,
+              "Load angle": 6.998
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.6178111658,
+              "Rotor angle": 2.620662379,
+              "Load angle": 6.999
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.6180258568,
+              "Rotor angle": 2.9603332697,
+              "Load angle": 7.0
+            }
+          ],
+          "numeric": {
+            "Active power": {
+              "n": 7001,
+              "min": -1.7209342279118,
+              "max": 2.0108164951963,
+              "mean": 0.7210424523805424,
+              "std": 0.14480461706706454,
+              "first": 0.0,
+              "last": 0.61802585682626
+            },
+            "Rotor angle": {
+              "n": 7001,
+              "min": 0.001817987718999,
+              "max": 6.2817413325868,
+              "mean": 3.1734146324531,
+              "std": 1.813671601736763,
+              "first": 3.4085619629176,
+              "last": 2.960333269731,
+              "angle_wrap": {
+                "max_abs_step": 5.9692328141914,
+                "large_jumps_gt_pi": 359,
+                "large_jumps_gt_pi_over_2": 359,
+                "range": [
+                  0.001817987718999,
+                  6.2817413325868
+                ],
+                "looks_wrapped_0_2pi": true,
+                "looks_wrapped_pm_pi": false,
+                "looks_deg_0_360": false,
+                "unwrapped_range": [
+                  3.4085619629176,
+                  2258.623858547204
+                ],
+                "if_deg_unwrapped_rad_range": [
+                  3.172987145735402e-05,
+                  0.10963706901225583
+                ]
+              }
+            },
+            "Load angle": {
+              "n": 7001,
+              "min": 0.0,
+              "max": 7.0,
+              "mean": 3.4999999999999996,
+              "std": 2.0210145966815776,
+              "first": 0.0,
+              "last": 7.0,
+              "angle_wrap": {
+                "max_abs_step": 0.001000000000000334,
+                "large_jumps_gt_pi": 0,
+                "large_jumps_gt_pi_over_2": 0,
+                "range": [
+                  0.0,
+                  7.0
+                ],
+                "looks_wrapped_0_2pi": false,
+                "looks_wrapped_pm_pi": false,
+                "looks_deg_0_360": false,
+                "unwrapped_range": [
+                  0.0,
+                  7.0
+                ],
+                "if_deg_unwrapped_rad_range": [
+                  0.0,
+                  0.12217304763960307
+                ]
+              }
+            }
+          }
+        },
+        {
+          "sheet": "Stable swing",
+          "rows": 7001,
+          "cols": 4,
+          "columns": [
+            "Unnamed: 0",
+            "Active power",
+            "Rotor angle",
+            "Load angle"
+          ],
+          "dtypes": {
+            "Unnamed: 0": "float64",
+            "Active power": "float64",
+            "Rotor angle": "float64",
+            "Load angle": "float64"
+          },
+          "missing": {
+            "Unnamed: 0": 7001,
+            "Active power": 0,
+            "Rotor angle": 0,
+            "Load angle": 0
+          },
+          "duplicated_rows": 0,
+          "head": [
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.0,
+              "Rotor angle": 3.6825619629,
+              "Load angle": 0.0
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": -0.0575004674,
+              "Rotor angle": 3.9967619629,
+              "Load angle": -1.1995805898
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": -1.5517690498,
+              "Rotor angle": 4.3109619629,
+              "Load angle": -0.1689683524
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 1.927205091,
+              "Rotor angle": 4.6251619629,
+              "Load angle": -0.0162236459
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 2.5252617399,
+              "Rotor angle": 4.9393619629,
+              "Load angle": -0.0613175175
+            }
+          ],
+          "tail": [
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.1414045906,
+              "Rotor angle": 1.5497076537,
+              "Load angle": 0.0053566973
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.141107425,
+              "Rotor angle": 1.9485409308,
+              "Load angle": 0.0053581893
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.140875522,
+              "Rotor angle": 2.3473963476,
+              "Load angle": 0.0053567411
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.1405258617,
+              "Rotor angle": 2.7462739059,
+              "Load angle": 0.0053577344
+            },
+            {
+              "Unnamed: 0": null,
+              "Active power": 0.1402111961,
+              "Rotor angle": 3.1451736099,
+              "Load angle": 0.0053561855
+            }
+          ],
+          "numeric": {
+            "Active power": {
+              "n": 7001,
+              "min": -1.6764786185796,
+              "max": 2.8290464368295,
+              "mean": 0.5439032673811331,
+              "std": 0.44716825735679394,
+              "first": 0.0,
+              "last": 0.14021119613715
+            },
+            "Rotor angle": {
+              "n": 7001,
+              "min": 0.00040215282068257,
+              "max": 6.2831022882042,
+              "mean": 3.153697238047647,
+              "std": 1.8138147029871443,
+              "first": 3.6825619629176,
+              "last": 3.1451736098859,
+              "angle_wrap": {
+                "max_abs_step": 5.9721471251459395,
+                "large_jumps_gt_pi": 373,
+                "large_jumps_gt_pi_over_2": 373,
+                "range": [
+                  0.00040215282068257,
+                  6.2831022882042
+                ],
+                "looks_wrapped_0_2pi": true,
+                "looks_wrapped_pm_pi": false,
+                "looks_deg_0_360": false,
+                "unwrapped_range": [
+                  3.6825619629176,
+                  2346.773293187876
+                ],
+                "if_deg_unwrapped_rad_range": [
+                  7.018890817093196e-06,
+                  0.10966082216875296
+                ]
+              }
+            },
+            "Load angle": {
+              "n": 7001,
+              "min": -1.1995805898087,
+              "max": 0.018207616407658,
+              "mean": 0.010420855500335327,
+              "std": 0.015641038888845573,
+              "first": 0.0,
+              "last": 0.005356185544246,
+              "angle_wrap": {
+                "max_abs_step": 1.1995805898087,
+                "large_jumps_gt_pi": 0,
+                "large_jumps_gt_pi_over_2": 0,
+                "range": [
+                  -1.1995805898087,
+                  0.018207616407658
+                ],
+                "looks_wrapped_0_2pi": false,
+                "looks_wrapped_pm_pi": false,
+                "looks_deg_0_360": false,
+                "unwrapped_range": [
+                  -1.1995805898087,
+                  0.018207616407658
+                ],
+                "if_deg_unwrapped_rad_range": [
+                  -0.02093663093517735,
+                  0.0003177828552537742
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "path": "C:\\Users\\HP\\DDET-MTD\\data_statedata.xlsx",
+      "bytes": 1058511,
+      "sheet_names": [
+        "Stable swing",
+        "Voltage stress",
+        "load encroachement"
+      ],
+      "sheets": [
+        {
+          "sheet": "Stable swing",
+          "rows": 6001,
+          "cols": 4,
+          "columns": [
+            "Time (ms)",
+            "VC (in Kv)",
+            "Vb(in Kv)",
+            "Va(in Kv)"
+          ],
+          "dtypes": {
+            "Time (ms)": "float64",
+            "VC (in Kv)": "float64",
+            "Vb(in Kv)": "float64",
+            "Va(in Kv)": "float64"
+          },
+          "missing": {
+            "Time (ms)": 0,
+            "VC (in Kv)": 0,
+            "Vb(in Kv)": 0,
+            "Va(in Kv)": 0
+          },
+          "duplicated_rows": 0,
+          "head": [
+            {
+              "Time (ms)": 0.0,
+              "VC (in Kv)": -0.497661274,
+              "Vb(in Kv)": -56.9234747206,
+              "Va(in Kv)": 57.4211359946
+            },
+            {
+              "Time (ms)": 0.001,
+              "VC (in Kv)": -52.7838764723,
+              "Vb(in Kv)": -191.5308481357,
+              "Va(in Kv)": 244.314724608
+            },
+            {
+              "Time (ms)": 0.002,
+              "VC (in Kv)": -96.6318275083,
+              "Vb(in Kv)": -156.1073929337,
+              "Va(in Kv)": 252.7392204419
+            },
+            {
+              "Time (ms)": 0.003,
+              "VC (in Kv)": -201.7614123932,
+              "Vb(in Kv)": -119.4962381024,
+              "Va(in Kv)": 321.2576504956
+            },
+            {
+              "Time (ms)": 0.004,
+              "VC (in Kv)": -243.9353746336,
+              "Vb(in Kv)": 17.8326656327,
+              "Va(in Kv)": 226.102709001
+            }
+          ],
+          "tail": [
+            {
+              "Time (ms)": 5.996,
+              "VC (in Kv)": -93.766287555,
+              "Vb(in Kv)": -150.1745860548,
+              "Va(in Kv)": 243.9408736171
+            },
+            {
+              "Time (ms)": 5.997,
+              "VC (in Kv)": -170.5188492915,
+              "Vb(in Kv)": -68.4057762017,
+              "Va(in Kv)": 238.9246255007
+            },
+            {
+              "Time (ms)": 5.998,
+              "VC (in Kv)": -223.6178080728,
+              "Vb(in Kv)": 22.85237903,
+              "Va(in Kv)": 200.7654290503
+            },
+            {
+              "Time (ms)": 5.999,
+              "VC (in Kv)": -245.6839117254,
+              "Vb(in Kv)": 110.941003232,
+              "Va(in Kv)": 134.7429085007
+            },
+            {
+              "Time (ms)": 6.0,
+              "VC (in Kv)": -233.6522485036,
+              "Vb(in Kv)": 183.6216675542,
+              "Va(in Kv)": 50.0305809569
+            }
+          ],
+          "numeric": {
+            "Time (ms)": {
+              "n": 6001,
+              "min": 0.0,
+              "max": 6.0,
+              "mean": 3.0,
+              "std": 1.7323394586512193,
+              "first": 0.0,
+              "last": 6.0,
+              "dt_mean": 0.001,
+              "dt_min": 0.0009999999999994458,
+              "dt_max": 0.001000000000000334,
+              "strictly_increasing": true,
+              "uniform": true,
+              "duration": 6.0
+            },
+            "VC (in Kv)": {
+              "n": 6001,
+              "min": -308.9889182913,
+              "max": 325.42820959415,
+              "mean": -0.1927722034018369,
+              "std": 189.89984937783777,
+              "first": -0.49766127404174,
+              "last": -233.65224850362
+            },
+            "Vb(in Kv)": {
+              "n": 6001,
+              "min": -309.01160799948,
+              "max": 309.23935495437,
+              "mean": 0.0037786770955269135,
+              "std": 189.89377538507523,
+              "first": -56.923474720628,
+              "last": 183.62166755415
+            },
+            "Va(in Kv)": {
+              "n": 6001,
+              "min": -311.27638888298,
+              "max": 321.25765049557,
+              "mean": 0.18949076453153632,
+              "std": 189.85807903892393,
+              "first": 57.421135994632,
+              "last": 50.030580956887
+            }
+          },
+          "frequency_interpretations": {
+            "time_col": "Time (ms)",
+            "voltage_col": "VC (in Kv)",
+            "voltage_columns": [
+              "VC (in Kv)",
+              "Vb(in Kv)",
+              "Va(in Kv)"
+            ],
+            "dt_in_column_units": 0.001,
+            "duration_in_column_units": 6.0,
+            "zero_crossings": 622,
+            "literal_Time_ms_to_seconds": {
+              "dt_s": 1e-06,
+              "fs_hz": 1000000.0,
+              "fft_peak_hz": 49825.02916180637,
+              "f0_from_zero_crossings_hz": 51824.69588401933
+            },
+            "treat_column_values_as_seconds": {
+              "dt_s": 0.001,
+              "fs_hz": 1000.0,
+              "fft_peak_hz": 49.82502916180636,
+              "f0_from_zero_crossings_hz": 51.82469588401933
+            }
+          }
+        },
+        {
+          "sheet": "Voltage stress",
+          "rows": 6501,
+          "cols": 4,
+          "columns": [
+            "Time (ms)",
+            "VA (in kV)",
+            "VB (in kV)",
+            "VC (in kV)"
+          ],
+          "dtypes": {
+            "Time (ms)": "float64",
+            "VA (in kV)": "float64",
+            "VB (in kV)": "float64",
+            "VC (in kV)": "float64"
+          },
+          "missing": {
+            "Time (ms)": 0,
+            "VA (in kV)": 0,
+            "VB (in kV)": 0,
+            "VC (in kV)": 0
+          },
+          "duplicated_rows": 0,
+          "head": [
+            {
+              "Time (ms)": 0.0,
+              "VA (in kV)": 0.0,
+              "VB (in kV)": 0.0,
+              "VC (in kV)": 0.0
+            },
+            {
+              "Time (ms)": 0.001,
+              "VA (in kV)": 112.361062837,
+              "VB (in kV)": -150.6821514036,
+              "VC (in kV)": 38.3210885666
+            },
+            {
+              "Time (ms)": 0.002,
+              "VA (in kV)": 307.9860019445,
+              "VB (in kV)": -336.0407591924,
+              "VC (in kV)": 28.0547644121
+            },
+            {
+              "Time (ms)": 0.003,
+              "VA (in kV)": 362.6393347976,
+              "VB (in kV)": -286.3493353673,
+              "VC (in kV)": -76.2899916361
+            },
+            {
+              "Time (ms)": 0.004,
+              "VA (in kV)": 352.4829445044,
+              "VB (in kV)": -155.8495714985,
+              "VC (in kV)": -196.6336327318
+            }
+          ],
+          "tail": [
+            {
+              "Time (ms)": 6.496,
+              "VA (in kV)": -140.685653766,
+              "VB (in kV)": -71.605970634,
+              "VC (in kV)": 212.2894844232
+            },
+            {
+              "Time (ms)": 6.497,
+              "VA (in kV)": -78.6968163512,
+              "VB (in kV)": -134.8639395998,
+              "VC (in kV)": 213.5604807471
+            },
+            {
+              "Time (ms)": 6.498,
+              "VA (in kV)": -7.8975084985,
+              "VB (in kV)": -183.002859741,
+              "VC (in kV)": 190.9022189077
+            },
+            {
+              "Time (ms)": 6.499,
+              "VA (in kV)": 63.8176340829,
+              "VB (in kV)": -210.6308303582,
+              "VC (in kV)": 146.8154498352
+            },
+            {
+              "Time (ms)": 6.5,
+              "VA (in kV)": 128.3745313317,
+              "VB (in kV)": -214.637873737,
+              "VC (in kV)": 86.2638939713
+            }
+          ],
+          "numeric": {
+            "Time (ms)": {
+              "n": 6501,
+              "min": 0.0,
+              "max": 6.5,
+              "mean": 3.2499999999999996,
+              "std": 1.8766770277985145,
+              "first": 0.0,
+              "last": 6.5,
+              "dt_mean": 0.001,
+              "dt_min": 0.0009999999999994458,
+              "dt_max": 0.001000000000000334,
+              "strictly_increasing": true,
+              "uniform": true,
+              "duration": 6.5
+            },
+            "VA (in kV)": {
+              "n": 6501,
+              "min": -328.51531806191,
+              "max": 362.63933479762,
+              "mean": -0.027537435534714747,
+              "std": 195.5514121884363,
+              "first": 0.0,
+              "last": 128.37453133171
+            },
+            "VB (in kV)": {
+              "n": 6501,
+              "min": -336.04075919236,
+              "max": 329.96319069232,
+              "mean": -0.030876295423099064,
+              "std": 195.53769714655044,
+              "first": 0.0,
+              "last": -214.63787373701
+            },
+            "VC (in kV)": {
+              "n": 6501,
+              "min": -328.0503819315,
+              "max": 329.19575964695,
+              "mean": 0.05841220326326421,
+              "std": 195.49500581529858,
+              "first": 0.0,
+              "last": 86.263893971277
+            }
+          },
+          "frequency_interpretations": {
+            "time_col": "Time (ms)",
+            "voltage_col": "VA (in kV)",
+            "voltage_columns": [
+              "VA (in kV)",
+              "VB (in kV)",
+              "VC (in kV)"
+            ],
+            "dt_in_column_units": 0.001,
+            "duration_in_column_units": 6.5,
+            "zero_crossings": 664,
+            "literal_Time_ms_to_seconds": {
+              "dt_s": 1e-06,
+              "fs_hz": 1000000.0,
+              "fft_peak_hz": 49992.3088755576,
+              "f0_from_zero_crossings_hz": 51069.066297492696
+            },
+            "treat_column_values_as_seconds": {
+              "dt_s": 0.001,
+              "fs_hz": 1000.0,
+              "fft_peak_hz": 49.992308875557605,
+              "f0_from_zero_crossings_hz": 51.06906629749269
+            }
+          }
+        },
+        {
+          "sheet": "load encroachement",
+          "rows": 7001,
+          "cols": 4,
+          "columns": [
+            "Time (ms)",
+            "VA (in kV)",
+            "VB (in kV)",
+            "VC (in kV)"
+          ],
+          "dtypes": {
+            "Time (ms)": "float64",
+            "VA (in kV)": "float64",
+            "VB (in kV)": "float64",
+            "VC (in kV)": "float64"
+          },
+          "missing": {
+            "Time (ms)": 0,
+            "VA (in kV)": 0,
+            "VB (in kV)": 0,
+            "VC (in kV)": 0
+          },
+          "duplicated_rows": 0,
+          "head": [
+            {
+              "Time (ms)": 0.0,
+              "VA (in kV)": 0.0,
+              "VB (in kV)": 0.0,
+              "VC (in kV)": 0.0
+            },
+            {
+              "Time (ms)": 0.001,
+              "VA (in kV)": 101.7075048738,
+              "VB (in kV)": -152.9197415657,
+              "VC (in kV)": 51.2122366919
+            },
+            {
+              "Time (ms)": 0.002,
+              "VA (in kV)": 311.7513754879,
+              "VB (in kV)": -374.2996343789,
+              "VC (in kV)": 62.5482685243
+            },
+            {
+              "Time (ms)": 0.003,
+              "VA (in kV)": 389.2020354512,
+              "VB (in kV)": -345.2370301298,
+              "VC (in kV)": -43.9649632802
+            },
+            {
+              "Time (ms)": 0.004,
+              "VA (in kV)": 329.3515462837,
+              "VB (in kV)": -120.8659252342,
+              "VC (in kV)": -208.4857015391
+            }
+          ],
+          "tail": [
+            {
+              "Time (ms)": 6.996,
+              "VA (in kV)": 202.9400509831,
+              "VB (in kV)": -196.7333854126,
+              "VC (in kV)": -6.2084511009
+            },
+            {
+              "Time (ms)": 6.997,
+              "VA (in kV)": 227.8148319503,
+              "VB (in kV)": -145.9873200755,
+              "VC (in kV)": -81.8356218402
+            },
+            {
+              "Time (ms)": 6.998,
+              "VA (in kV)": 227.3140201821,
+              "VB (in kV)": -78.999456014,
+              "VC (in kV)": -148.321458081
+            },
+            {
+              "Time (ms)": 6.999,
+              "VA (in kV)": 201.4769971612,
+              "VB (in kV)": -3.2004317935,
+              "VC (in kV)": -198.2758379619
+            },
+            {
+              "Time (ms)": 7.0,
+              "VA (in kV)": 153.1547589533,
+              "VB (in kV)": 72.9575840525,
+              "VC (in kV)": -226.1046794603
+            }
+          ],
+          "numeric": {
+            "Time (ms)": {
+              "n": 7001,
+              "min": 0.0,
+              "max": 7.0,
+              "mean": 3.4999999999999996,
+              "std": 2.0210145966815776,
+              "first": 0.0,
+              "last": 7.0,
+              "dt_mean": 0.001,
+              "dt_min": 0.0009999999999994458,
+              "dt_max": 0.001000000000000334,
+              "strictly_increasing": true,
+              "uniform": true,
+              "duration": 7.0
+            },
+            "VA (in kV)": {
+              "n": 7001,
+              "min": -320.83652119067,
+              "max": 389.20203545121,
+              "mean": 0.13539105363510612,
+              "std": 198.74484971521076,
+              "first": 0.0,
+              "last": 153.15475895333
+            },
+            "VB (in kV)": {
+              "n": 7001,
+              "min": -374.2996343789,
+              "max": 423.56116485597,
+              "mean": -0.046194664250235766,
+              "std": 198.7072556746222,
+              "first": 0.0,
+              "last": 72.957584052498
+            },
+            "VC (in kV)": {
+              "n": 7001,
+              "min": -322.01812794172,
+              "max": 329.82462262899,
+              "mean": -0.08919859404944337,
+              "std": 198.67077794030632,
+              "first": 0.0,
+              "last": -226.10467946031
+            }
+          },
+          "frequency_interpretations": {
+            "time_col": "Time (ms)",
+            "voltage_col": "VA (in kV)",
+            "voltage_columns": [
+              "VA (in kV)",
+              "VB (in kV)",
+              "VC (in kV)"
+            ],
+            "dt_in_column_units": 0.001,
+            "duration_in_column_units": 7.0,
+            "zero_crossings": 708,
+            "literal_Time_ms_to_seconds": {
+              "dt_s": 1e-06,
+              "fs_hz": 1000000.0,
+              "fft_peak_hz": 49992.858163119556,
+              "f0_from_zero_crossings_hz": 50564.20511355521
+            },
+            "treat_column_values_as_seconds": {
+              "dt_s": 0.001,
+              "fs_hz": 1000.0,
+              "fft_peak_hz": 49.99285816311955,
+              "f0_from_zero_crossings_hz": 50.564205113555204
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "alignment": [
+    {
+      "state_sheet": "Stable swing",
+      "voltage_sheet": "Stable swing",
+      "state_found": true,
+      "voltage_found": true,
+      "row_counts": {
+        "state": 7001,
+        "voltage": 6001,
+        "equal": false
+      },
+      "has_shared_time_column": false,
+      "state_columns": [
+        "Unnamed: 0",
+        "Active power",
+        "Rotor angle",
+        "Load angle"
+      ],
+      "voltage_columns": [
+        "Time (ms)",
+        "VC (in Kv)",
+        "Vb(in Kv)",
+        "Va(in Kv)"
+      ],
+      "can_align_by_identical_time_vector": false,
+      "can_align_by_equal_row_index": false,
+      "note": "State workbook has no Time column in typical P/angle sheets; voltage workbook has Time (ms). Equal row counts would be necessary but not sufficient."
+    },
+    {
+      "state_sheet": "Voltage instable",
+      "voltage_sheet": "Voltage stress",
+      "state_found": true,
+      "voltage_found": true,
+      "row_counts": {
+        "state": 7001,
+        "voltage": 6501,
+        "equal": false
+      },
+      "has_shared_time_column": false,
+      "state_columns": [
+        "Unnamed: 0",
+        "Active power",
+        "Rotor angle",
+        "Load angle"
+      ],
+      "voltage_columns": [
+        "Time (ms)",
+        "VA (in kV)",
+        "VB (in kV)",
+        "VC (in kV)"
+      ],
+      "can_align_by_identical_time_vector": false,
+      "can_align_by_equal_row_index": false,
+      "note": "State workbook has no Time column in typical P/angle sheets; voltage workbook has Time (ms). Equal row counts would be necessary but not sufficient."
+    },
+    {
+      "state_sheet": "Load encroachment",
+      "voltage_sheet": "load encroachement",
+      "state_found": false,
+      "voltage_found": true
+    }
+  ]
+}
